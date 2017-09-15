@@ -1,5 +1,3 @@
-|image0|
-
 Definizioni e Acronimi
 ======================
 
@@ -66,7 +64,8 @@ Definizioni e Acronimi
 **
 **
 
-\ **Premessa**
+Premessa
+--------------------------------
 
 Il decreto-legge 18 ottobre 2012, n. 179 convertito, con modificazioni,
 dalla legge 17 dicembre 2012, n. 221, ha introdotto importanti norme
@@ -77,8 +76,7 @@ formulazione dell’articolo 5 del CAD (Effettuazione di pagamenti con
 modalità informatiche) che indica le regole per l’effettuazione dei
 pagamenti a favore delle pubbliche amministrazioni imponendo di
 accettare «\ *i pagamenti ad esse spettanti, a qualsiasi titolo dovuti,
-anche con l'uso delle tecnologie dell'informazione e della
-comunicazione»*.
+anche con l'uso delle tecnologie dell'informazione e della comunicazione»*.
 
 Al fine di dare pratica attuazione all’articolo 5, comma 4 del CAD
 l'Agenzia per l'Italia digitale, sentita la Banca d'Italia, ha pertanto
@@ -99,9 +97,10 @@ Come riportato nelle citate Linee guida, le presenti specifiche fanno
 riferimento agli standard internazionali SEPA che utilizzano il formato
 `*UNIFI ISO 20022* <http://www.iso20022.org/>`__.
 
-\ **Premessa alla Versione 1.3 **
+Premessa alla Versione 1.3
+--------------------------------
 
-La diffusione del sistema pagoPA\ :sup:`®` con l'adesione di molteplici
+La diffusione del sistema pagoPA® con l'adesione di molteplici
 soggetti che offrono servizi di interconnessione al Nodo dei
 Pagamenti-SPC, i cosiddetti intermediari e partner tecnologici, ha dato
 luogo alla possibilità che un Ente Creditore utilizzi soggetti diversi
@@ -229,10 +228,8 @@ composizione dell’operazione di trasferimento fondi, mentre nel capitolo
 saranno date istruzioni per la riconciliazione dei pagamenti che non
 sono oggetto di un riversamento cumulativo.
 
-+---------------------------------------------+----+
-| .. rubric:: Siti web Degli Enti Creditori   |    |
-|    :name: siti-web-degli-enti-creditori     |    |
-+---------------------------------------------+----+
+Siti web Degli Enti Creditori
+--------------------------------
 
 Una volta manifestatasi l’esigenza del pagamento (vedi capitolo “”), gli
 Enti Creditori devono consentire agli utilizzatori finali – a norma
@@ -301,13 +298,9 @@ Come indicato nel capitolo 2 delle SANP (Allegato B alle Linee guida),
 gli incassi che un Ente Creditore deve gestire possono essere distinti
 secondo due diverse modalità:
 
--  su iniziativa dell’Ente Creditore (o dovuti): è il caso in cui
-   l’ente, attraverso un avviso (analogico o digitale), richiede un
-   pagamento all’utilizzatore finale;
+-  su iniziativa dell’Ente Creditore (o dovuti): è il caso in cui l’ente, attraverso un avviso (analogico o digitale), richiede un pagamento all’utilizzatore finale;
 
--  su iniziativa del debitore (o spontanei): nei quali l’utilizzatore
-   finale - che deve effettuare, a vario titolo, un versamento a favore
-   dell’ente - si attiva in via autonoma.
+-  su iniziativa del debitore (o spontanei): nei quali l’utilizzatore finale - che deve effettuare, a vario titolo, un versamento a favore dell’ente - si attiva in via autonoma.
 
 Nel primo caso (avviso analogico o digitale), in cui il pagamento può
 essere eseguito attraverso i canali messi a disposizione dai PSP (cfr. §
@@ -323,7 +316,7 @@ caso precedente.
 Punti di generazione del codice IUV
 -----------------------------------
 
-Il sistema pagoPA\ :sup:`®` consente ad un Ente Creditore di utilizzare
+Il sistema pagoPA® consente ad un Ente Creditore di utilizzare
 uno più intermediari e/o partner tecnologici: tale circostanza fa si che
 la generazione dello IUV possa avvenire in maniera indipendente presso
 più soggetti e possibilmente non sotto il controllo diretto dell’Ente
@@ -356,16 +349,11 @@ ogni punto di generazione del codice IUV in funzione del soggetto che
 svolge il ruolo di intermediario o partner tecnologico, secondo la
 seguente classificazione:
 
-a. **Erogatori di servizi centralizzati**: intermediari tecnologici,
-   riconosciuti da AgID, che erogano servizi in modalità accentrata a
-   livello nazionale;
+a. **Erogatori di servizi centralizzati**: intermediari tecnologici, riconosciuti da AgID, che erogano servizi in modalità accentrata a livello nazionale;
 
-b. **Punti di generazione del Codice IUV**: qualsiasi intermediario o
-   partner tecnologico che non rientra nella classificazione precedente,
-   nonché le unità autonome dell'ente.
+b. **Punti di generazione del Codice IUV**: qualsiasi intermediario o partner tecnologico che non rientra nella classificazione precedente, nonché le unità autonome dell'ente.
 
-Uno schema delle modalità di attribuzione del Codice Segregazione è
-riportata in Figura 2.
+Uno schema delle modalità di attribuzione del Codice Segregazione è riportata in Figura 2.
 
 |image7|
 
