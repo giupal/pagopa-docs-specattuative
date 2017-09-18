@@ -10,4 +10,5 @@ Nota: Di seguito trovate la documentazione originale da cui siamo partiti per il
    :maxdepth: 3
    :numbered:
 
+   introduzione.rst
    specifiche_attuative_pagamenti.rst
