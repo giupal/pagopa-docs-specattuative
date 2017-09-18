@@ -980,29 +980,15 @@ Esempi: **2015-07-15xxxxxxxx-0000000001**
 |    :name: riconciliazione-del-riversamento     |    |
 +------------------------------------------------+----+
 
-Tenuto presente quanto indicato al § per ciò che attiene ai pagamenti
-riguardanti la Marca da bollo digitale, la riconciliazione dei
-riversamenti effettuati dal prestatore di servizi di pagamento avviene a
-cura dell’Ente Creditore in due passi successivi:
+Tenuto presente quanto indicato al § per ciò che attiene ai pagamenti riguardanti la Marca da bollo digitale, la riconciliazione dei riversamenti effettuati dal prestatore di servizi di pagamento avviene a cura dell’Ente Creditore in due passi successivi:
 
-a) Abbinamento tra il componente **<** **idFlusso >** della causale del
-   SEPA Credit Transfer con il quale è stato effettuato il riversamento
-   verso l’Ente Creditore (vedi capitolo ) ed il dato
-   identificativoFlusso presente nel flusso di rendicontazione di cui al
-   capitolo ; come riscontro dovranno coincidere le informazioni:
+a) Abbinamento tra il componente **<** **idFlusso >** della causale del SEPA Credit Transfer con il quale è stato effettuato il riversamento verso l’Ente Creditore (vedi capitolo ) ed il dato identificativoFlusso presente nel flusso di rendicontazione di cui al capitolo ; come riscontro dovranno coincidere le informazioni:
 
-   1. identificativoUnivocoRegolamento del flusso di rendicontazione con
-      il dato *Transaction Reference Number* (TRN) del SEPA Credit
-      Transfer con il quale è stato effettuato il Riversamento;
+   1. identificativoUnivocoRegolamento del flusso di rendicontazione con il dato *Transaction Reference Number* (TRN) del SEPA Credit Transfer con il quale è stato effettuato il Riversamento;
 
-   2. “importoTotalePagamenti” del flusso di rendicontazione con il dato
-      *Amount* (attributo AT-04) del suddetto SEPA Credit Transfer
-      di Riversamento;
+   2. “importoTotalePagamenti” del flusso di rendicontazione con il dato *Amount* (attributo AT-04) del suddetto SEPA Credit Transfer di Riversamento;
 
-b) Una volta completata la fase di abbinamento precedente, i singoli
-   pagamenti contenuti nel flusso potranno essere riconciliati con le
-   informazioni memorizzate presso l’Ente Creditore sulla base dei
-   seguenti dati:
+b) Una volta completata la fase di abbinamento precedente, i singoli pagamenti contenuti nel flusso potranno essere riconciliati con le informazioni memorizzate presso l’Ente Creditore sulla base dei seguenti dati:
 
    1. identificativoUnivocoVersamento,
 
@@ -1010,31 +996,21 @@ b) Una volta completata la fase di abbinamento precedente, i singoli
 
    3. singoloImportoPagato
 
-    ed eventualmente, se presente e ritenuto opportuno da parte
-    dell’Ente Creditore, dal dato
+    ed eventualmente, se presente e ritenuto opportuno da parte dell’Ente Creditore, dal dato
 
 1. indiceDatiSingoloPagamento.
 
 Appendice 1 - Creditor Reference - Standard ISO 11649:2009
 
-Secondo lo standard ISO 11649:2009 il *Creditor Reference* è un
-costrutto alfanumerico [10]_ lungo al massimo 25 caratteri, così
-composto:
+Secondo lo standard ISO 11649:2009 il *Creditor Reference* è un costrutto alfanumerico [10]_ lungo al massimo 25 caratteri, così composto:
 
 **< identifier > < check digits > < reference >**
 
-All’inizio della struttura è posizionata la costante “\ **RF**\ ”
-(identifier), di seguito sono presenti due numeri (check digits), mentre
-la parte rimanente (reference) può essere lunga sino ad un massimo di 21
-caratteri, il cui contenuto può essere strutturato senza alcuna
-restrizione nell’ambito del dominio alfanumerico.
+All’inizio della struttura è posizionata la costante “\ **RF**\ ” (identifier), di seguito sono presenti due numeri (check digits), mentre la parte rimanente (reference) può essere lunga sino ad un massimo di 21 caratteri, il cui contenuto può essere strutturato senza alcuna restrizione nell’ambito del dominio alfanumerico.
 
-Il componente check digits ha lo scopo di verificare che il componente
-*reference* sia stata correttamente impostata e viene calcolata secondo
-l’algoritmo ISO/IEC 7064.
+Il componente check digits ha lo scopo di verificare che il componente *reference* sia stata correttamente impostata e viene calcolata secondo l’algoritmo ISO/IEC 7064.
 
-Per una informativa più esaustiva possono essere consultati anche i
-seguiti link:
+Per una informativa più esaustiva possono essere consultati anche i seguiti link:
 
 `*http://www.iso.org/iso/catalogue\_detail.htm?csnumber=50649* <http://www.iso.org/iso/catalogue_detail.htm?csnumber=50649>`__
 
@@ -1112,72 +1088,42 @@ strutturati dei conti correnti bancari.
 L’algoritmo per il calcolo dei check digits che si applica alla stringa
 numerica risultante dal processo di conversione è il seguente:
 
-1. Calcolare il resto della divisione per 97 (modulo 97) di detto
-   numero,
+1. Calcolare il resto della divisione per 97 (modulo 97) di detto numero,
 
 2. Sottrarre il risultato ottenuto da 98;
 
-3. Se tale valore è maggiore o uguale a 10, il dato check digits è il
-   valore ottenuto al punto 2, altrimenti anteporre uno zero
-   (esempio: se il risultato è 4, il valore del check digits è 04).
+3. Se tale valore è maggiore o uguale a 10, il dato check digits è il valore ottenuto al punto 2, altrimenti anteporre uno zero (esempio: se il risultato è 4, il valore del check digits è 04).
 
 FINE DOCUMENTO
 
-.. [1]
-   Vedi http://www.indicepa.gov.it/
+.. [1] Vedi http://www.indicepa.gov.it/
 
-.. [2]
-   La struttura del Numero Avviso si adegua a prassi e standard
-   "de-facto" preesistenti e consolidati presso i PSP.
+.. [2] La struttura del Numero Avviso si adegua a prassi e standard "de-facto" preesistenti e consolidati presso i PSP.
 
-.. [3]
-   La componente <**application code>** identifica il singolo archivio
-   di pagamenti in attesa e viene indirizzato mediante i meccanismi di
-   configurazione del Nodo dei Pagamenti-SPC, che in questo modo sarà in
-   grado di individuare il canale corretto di inoltro delle richieste di
-   verifica e attivazione di pagamento (cfr § 8.2.3 delle SANP).
+.. [3] La componente <**application code>** identifica il singolo archivio di pagamenti in attesa e viene indirizzato mediante i meccanismi di configurazione del Nodo dei Pagamenti-SPC, che in questo modo sarà in grado di individuare il canale corretto di inoltro delle richieste di verifica e attivazione di pagamento (cfr § 8.2.3 delle SANP).
 
    In sintesi questa informazione rappresenta "l'indirizzo"
    dell'archivio dove sono conservate le richieste in attesa che hanno
    dato luogo all’avviso di pagamento.
 
-.. [4]
-   È il caso, ad esempio, dell'Ente Creditore Equitalia che identifica
-   le proprie cartelle con un codice denominato RAV, che ha le stesse
-   caratteristiche di lunghezza e formato del codice IUV, ma utilizza
-   regole diverse di generazione.
+.. [4] È il caso, ad esempio, dell'Ente Creditore Equitalia che identifica le proprie cartelle con un codice denominato RAV, che ha le stesse caratteristiche di lunghezza e formato del codice IUV, ma utilizza regole diverse di generazione.
 
-.. [5]
-    Si veda, ad esempio, il documento “RF Creditor reference” al
-   seguente indirizzo
-
-   `*https://www.ebaportal.eu/\_Download/Research%20and%20Analysis/2010/rf\_creditor\_reference.pdf* <https://www.ebaportal.eu/_Download/Research%20and%20Analysis/2010/rf_creditor_reference.pdf>`__,
+.. [5] Si veda, ad esempio, il documento “RF Creditor reference” al seguente indirizzo
+`*https://www.ebaportal.eu/\_Download/Research%20and%20Analysis/2010/rf\_creditor\_reference.pdf* <https://www.ebaportal.eu/_Download/Research%20and%20Analysis/2010/rf_creditor_reference.pdf>`__,
 
    Vedi anche il calcolatore di Creditor Reference alla pagina
    `*http://www.jknc.eu/RFcalculator* <http://www.jknc.eu/RFcalculator>`__
 
-.. [6]
-   Cfr documentazione all’indirizzo
+.. [6] Cfr documentazione all’indirizzo
    `*http://www.europeanpaymentscouncil.eu/content.cfm?page=sepa\_credit\_transfer* <http://www.europeanpaymentscouncil.eu/content.cfm?page=sepa_credit_transfer>`__
 
-.. [7]
-   A titolo esemplificativo e non esaustivo, per gli Enti Creditori che
-   svolgono il servizio di riscossione, si segnalano le sanzioni
-   stabilite all’articolo 47 del Decreto legislativo del 13 aprile 1999,
-   n. 112.
+.. [7] A titolo esemplificativo e non esaustivo, per gli Enti Creditori che svolgono il servizio di riscossione, si segnalano le sanzioni stabilite all’articolo 47 del Decreto legislativo del 13 aprile 1999, n. 112.
 
-.. [8]
-   Ad esempio attraverso i flussi automatizzati dell’ordinativo
-   informatico.
+.. [8] Ad esempio attraverso i flussi automatizzati dell’ordinativo informatico.
 
-.. [9]
-   ex art. 6, comma 2, provvedimento del Direttore dell’Agenzia delle
-   Entrate del 19 settembre 2014.
+.. [9] ex art. 6, comma 2, provvedimento del Direttore dell’Agenzia delle Entrate del 19 settembre 2014.
 
-.. [10]
-   L'insieme delle lettere dell'alfabeto latino e dei numeri arabi.
-   Appartengono a quest'insieme le lettere minuscole dalla a alla z, le
-   maiuscole dalla A alla Z e i numeri da 0 a 9
+.. [10] L'insieme delle lettere dell'alfabeto latino e dei numeri arabi. Appartengono a quest'insieme le lettere minuscole dalla a alla z, le maiuscole dalla A alla Z e i numeri da 0 a 9
 
 .. |image0| image:: media/image1.png
    :width: 4.05000in
