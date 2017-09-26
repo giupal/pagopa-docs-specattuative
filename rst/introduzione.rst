@@ -14,7 +14,7 @@ Definizioni e Acronimi
 +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |     Codice IUV                      |     Sinonimo rafforzativo di IUV. È definito al paragrafo 7.1 delle Linee guida.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|     EC                              |     Nel contesto del sistema pagoPA\ :sup:`®` comprende le pubbliche amministrazioni definite nell’articolo 2, comma 2 del CAD ed i gestori di pubblici servizi “nei rapporti con l’utenza”. A prescindere dalla natura giuridica, è il soggetto intestatario del conto di pagamento utilizzato per l’accredito di cui all’operazione di pagamento elettronico eseguita attraverso il Nodo dei Pagamenti-SPC.                                                                                                                                                                                                        |
+|     EC                              |     Nel contesto del sistema pagoPA® comprende le pubbliche amministrazioni definite nell’articolo 2, comma 2 del CAD ed i gestori di pubblici servizi “nei rapporti con l’utenza”. A prescindere dalla natura giuridica, è il soggetto intestatario del conto di pagamento utilizzato per l’accredito di cui all’operazione di pagamento elettronico eseguita attraverso il Nodo dei Pagamenti-SPC.                                                                                                                                                                                                        |
 |                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |     Enti Creditori                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -22,7 +22,7 @@ Definizioni e Acronimi
 +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |     Flusso                          |     Serie di dati oggetto di un processo di elaborazione o trasmissione.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|     Intermediario tecnologico       |     EC o PSP aderente a pagoPA\ :sup:`®` che gestisce le attività di interconnessione al NodoSPC per conto di altri soggetti aderenti a pagoPA\ :sup:`®` (PA o PSP), ai sensi del § 8.3.3 delle Linee guida.                                                                                                                                                                                                                                                                                                                                                                                                         |
+|     Intermediario tecnologico       |     EC o PSP aderente a pagoPA® che gestisce le attività di interconnessione al NodoSPC per conto di altri soggetti aderenti a ppagoPA® (PA o PSP).                                                                                                                                                                                                                                                                                                                                                                                                         |
 +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |     IPA                             |     L'Indice delle Pubbliche Amministrazioni (IPA) costituisce l'archivio ufficiale contenente i riferimenti organizzativi, telematici e toponomastici delle pubbliche Amministrazioni.                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -38,7 +38,7 @@ Definizioni e Acronimi
 +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |     PA                              |     Pubblica Amministrazione (centrale e locale).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|     pagoPA\ :sup:`®`                |     Il sistema dei pagamenti a favore delle pubbliche amministrazioni e dei gestori di pubblici servizi.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|     pagoPA®                |     Il sistema dei pagamenti a favore delle pubbliche amministrazioni e dei gestori di pubblici servizi.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |     Partner tecnologico             |     Soggetto che gestisce le attività di interconnessione al NodoSPC per conto di una PA, nel rispetto delle specifiche tecniche contenute nelle Linee guida.                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -62,74 +62,35 @@ Definizioni e Acronimi
 +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Premessa
---------------------------------
+---------------------------------
 
-Il decreto-legge 18 ottobre 2012, n. 179 convertito, con modificazioni,
-dalla legge 17 dicembre 2012, n. 221, ha introdotto importanti norme
-volte a favorire l’azzeramento del “\ *digital divide*\ ” e lo sviluppo
-dell’utilizzo della moneta elettronica. In particolare, il comma 1
-dell’articolo 15 (Pagamenti elettronici) definisce una nuova
-formulazione dell’articolo 5 del CAD (Effettuazione di pagamenti con
-modalità informatiche) che indica le regole per l’effettuazione dei
-pagamenti a favore delle pubbliche amministrazioni imponendo di
-accettare «\ *i pagamenti ad esse spettanti, a qualsiasi titolo dovuti,
-anche con l'uso delle tecnologie dell'informazione e della comunicazione»*.
+Il decreto-legge 18 ottobre 2012, n. 179 convertito, con modificazioni, dalla legge 17 dicembre 2012, n. 221, ha introdotto importanti norme volte a favorire l’azzeramento del “\ *digital divide*\ ” e lo sviluppo dell’utilizzo della moneta elettronica. In particolare, il comma 1 dell’articolo 15 (Pagamenti elettronici) definisce una nuova
+formulazione dell’articolo 5 del CAD (Effettuazione di pagamenti con modalità informatiche) che indica le regole per l’effettuazione dei pagamenti a favore delle pubbliche amministrazioni imponendo di accettare «\ *i pagamenti ad esse spettanti, a qualsiasi titolo dovuti, anche con l'uso delle tecnologie dell'informazione e della comunicazione»*.
 
-Al fine di dare pratica attuazione all’articolo 5, comma 4 del CAD
-l'Agenzia per l'Italia digitale, sentita la Banca d'Italia, ha pertanto
-reso disponibile il documento (di seguito Linee guida) che,
-nell’illustrare le modalità da adottare per l’effettuazione di detti
-pagamenti, rimanda a specifici documenti tecnici.
+Al fine di dare pratica attuazione all’articolo 5, comma 4 del CAD l'Agenzia per l'Italia digitale, sentita la Banca d'Italia, ha pertanto reso disponibile il documento (di seguito Linee guida) che, nell’illustrare le modalità da adottare per l’effettuazione di detti pagamenti, rimanda a specifici documenti tecnici.
 
-Le presenti rappresentano l’\ **Allegato A** alle citate Linee guida e
-devono essere utilizzate in combinazione con quest’ultime, nonché con il
-documento (**Allegato B**), documenti ai quali si rimanda per tutte le
-voci e gli argomenti qui non specificatamente indicati.
+Le presenti rappresentano l’\ **Allegato A** alle citate Linee guida e devono essere utilizzate in combinazione con quest’ultime, nonché con il documento (**Allegato B**), documenti ai quali si rimanda per tutte le voci e gli argomenti qui non specificatamente indicati.
 
-Nel seguito, indicheremo con la dicitura **“Enti Creditori”** le
-pubbliche amministrazioni o i gestori di pubblici servizi che, a vario
-titolo, sono creditori di somme nei confronti degli utilizzatori finali.
+Nel seguito, indicheremo con la dicitura **“Enti Creditori”** le pubbliche amministrazioni o i gestori di pubblici servizi che, a vario titolo, sono creditori di somme nei confronti degli utilizzatori finali.
 
-Come riportato nelle citate Linee guida, le presenti specifiche fanno
-riferimento agli standard internazionali SEPA che utilizzano il formato
-`*UNIFI ISO 20022* <http://www.iso20022.org/>`__.
+Come riportato nelle citate Linee guida, le presenti specifiche fanno riferimento agli standard internazionali SEPA che utilizzano il formato `*UNIFI ISO 20022* <http://www.iso20022.org/>`__.
 
 Premessa alla Versione 1.3
---------------------------------
+---------------------------------
 
-La diffusione del sistema pagoPA® con l'adesione di molteplici
-soggetti che offrono servizi di interconnessione al Nodo dei
-Pagamenti-SPC, i cosiddetti intermediari e partner tecnologici, ha dato
-luogo alla possibilità che un Ente Creditore utilizzi soggetti diversi
-per consentire ai cittadini di effettuare pagamenti elettronici.
+La diffusione del sistema pagoPA® con l'adesione di molteplici soggetti che offrono servizi di interconnessione al Nodo dei Pagamenti-SPC, i cosiddetti intermediari e partner tecnologici, ha dato luogo alla possibilità che un Ente Creditore utilizzi soggetti diversi per consentire ai cittadini di effettuare pagamenti elettronici.
 
-È questo il caso, ad esempio, dei comuni che si servono di Unioncamere
-per erogare i servizi SUAP e che parimenti utilizzano anche
-l'intermediazione della Regione di appartenenza per consentire i
-pagamenti elettronici previsti dalle Linee guida.
+È questo il caso, ad esempio, dei comuni che si servono di Unioncamere per erogare i servizi SUAP e che parimenti utilizzano anche l'intermediazione della Regione di appartenenza per consentire i pagamenti elettronici previsti dalle Linee guida.
 
-Altro caso cui fare riferimento è quello legato al nuovo servizio di
-emissione della Carta di Identità Elettronica, per il quale il Ministero
-degli Interni è intermediario tecnologico di tutti i comuni italiani.
+Altro caso cui fare riferimento è quello legato al nuovo servizio di emissione della Carta di Identità Elettronica, per il quale il Ministero degli Interni è intermediario tecnologico di tutti i comuni italiani.
 
-Tutto ciò premesso, la presente versione delle contiene l'aggiornamento
-delle regole di generazione del codice IUV, già anticipate con il
-documento monografico "*Utilizzo del codice IUV per enti
-plurintermediati*".
+Tutto ciò premesso, la presente versione delle contiene l'aggiornamento delle regole di generazione del codice IUV, già anticipate con il documento monografico "*Utilizzo del codice IUV per enti plurintermediati*".
 
-Le presenti specifiche aggiornano le regole di generazione del codice
-IUV definite al ***paragrafo 7.4.1*** della versione 1.7.0 (marzo 2016)
-delle "Specifiche Attuative del Nodo dei Pagamenti-SPC" Allegato B alle
-Linee guida (di seguito SANP).
+Le presenti specifiche aggiornano le regole di generazione del codice IUV definite al ***paragrafo 7.4.1*** della versione 1.7.0 (marzo 2016) delle "Specifiche Attuative del Nodo dei Pagamenti-SPC" Allegato B alle Linee guida (di seguito SANP).
 
-La presente versione tiene inoltre conto delle modifiche apportate
-all'articolo 5 del Codice dell'Amministrazione Digitale dal decreto
-legislativo 26 agosto 2016, n. 179.
+La presente versione tiene inoltre conto delle modifiche apportate all'articolo 5 del Codice dell'Amministrazione Digitale dal decreto legislativo 26 agosto 2016, n. 179.
 
-Per facilitare il compito del lettore, le variazioni rilevanti apportate
-a capitoli, paragrafi, sotto paragrafi (nel seguito parte o parti di
-testo) presenti nella precedente versione 1.7.0, sono segnalate
-graficamente come segue:
+Per facilitare il compito del lettore, le variazioni rilevanti apportate a capitoli, paragrafi, sotto paragrafi (nel seguito parte o parti di testo) presenti nella precedente versione 1.7.0, sono segnalate graficamente come segue:
 
 +------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | |image1|   | Indica la nuova parte di testo inserita.                                                                                                                     |
