@@ -2,17 +2,9 @@
 Ciclo di vita del pagamento
 -----------------------------
 
-Nell’ambito delle relazioni tra utilizzatore finale ed enti creditori,
-la necessità di effettuare pagamenti a favore di questi ultimi è sempre
-associata a procedimenti amministrativi che prevedono il rispetto di
-regole per il loro corretto svolgimento quali, ad esempio, la verifica
-di alcuni prerequisiti. Tali procedimenti danno infine luogo ad un
-pagamento che si articola sulla falsariga rappresentata in , che
-definiamo “Ciclo di vita” del pagamento.
+Nell’ambito delle relazioni tra utilizzatore finale ed enti creditori, la necessità di effettuare pagamenti a favore di questi ultimi è sempre associata a procedimenti amministrativi che prevedono il rispetto di regole per il loro corretto svolgimento quali, ad esempio, la verifica di alcuni prerequisiti. Tali procedimenti danno infine luogo ad un pagamento che si articola sulla falsariga rappresentata in , che definiamo “Ciclo di vita” del pagamento.
 
-In questa descrizione del “Ciclo di vita” del pagamento l'ordine delle
-fasi è indicativo e può variare a seconda dello scenario e della
-tipologia di servizio al quale si riferisce il pagamento stesso.
+In questa descrizione del “Ciclo di vita” del pagamento l'ordine delle fasi è indicativo e può variare a seconda dello scenario e della tipologia di servizio al quale si riferisce il pagamento stesso.
 
 |image5|
 
@@ -20,10 +12,7 @@ Figura 1 - Ciclo di vita del pagamento
 
 L’esigenza del pagamento può nascere sulla base di un bisogno dell’utilizzatore finale che necessita, ad esempio, di un servizio da parte dell’ente ovvero quando quest’ultimo deve richiedere all’utilizzatore finale l’estinzione di un debito creatosi nei suoi confronti: ad esempio il pagamento di una multa o di un’ammenda.
 
-Questa esigenza si concretizza attraverso la generazione di un insieme
-di informazioni che l’Ente Creditore deve memorizzare in appositi
-archivi per la successiva fase di riconciliazione e che permettono
-l’effettuazione del pagamento stesso.
+Questa esigenza si concretizza attraverso la generazione di un insieme di informazioni che l’Ente Creditore deve memorizzare in appositi archivi per la successiva fase di riconciliazione e che permettono l’effettuazione del pagamento stesso.
 
 Una volta completata la fase di esecuzione del pagamento - attraverso le
 procedure messe a disposizione dagli enti creditori o dai prestatori di
@@ -72,8 +61,10 @@ composizione dell’operazione di trasferimento fondi, mentre nel capitolo
 saranno date istruzioni per la riconciliazione dei pagamenti che non
 sono oggetto di un riversamento cumulativo.
 
-Siti web Degli Enti Creditori
---------------------------------
++---------------------------------------------+----+
+| .. rubric:: Siti web Degli Enti Creditori   |    |
+|    :name: siti-web-degli-enti-creditori     |    |
++---------------------------------------------+----+
 
 Una volta manifestatasi l’esigenza del pagamento (vedi capitolo “”), gli
 Enti Creditori devono consentire agli utilizzatori finali – a norma
@@ -90,10 +81,9 @@ procedure di validazione avanzata (come, ad esempio, certificati SSL con
 riconosciute).
 
 Le pagine di tali siti web, dedicate all'effettuazione dei pagamenti
-devono esporre il logo del sistema pagoPA\ :sup:`®` per dare prova della
+devono esporre il logo del sistema pagoPA® per dare prova della
 loro informatizzazione e promuovere i servizi di pagamento elettronici
-offerti attraverso il Sistema (cfr. § 11.5 delle "Specifiche Attuative
-del Nodo dei Pagamenti-SPC" Allegato B alle Linee guida).
+offerti attraverso il Sistema.
 
 Gli indirizzi internet dei servizi dedicati ai pagamenti devono essere
 inoltre pubblicati sull'Indice delle Pubbliche Amministrazioni
@@ -105,93 +95,50 @@ tecniche per il protocollo informatico.
 |    :name: generazione-dellidentificativo-univoco-di-versamento      |            |
 +---------------------------------------------------------------------+------------+
 
-Secondo quanto definito nel paragrafo 7.1 delle Linee guida, « *...,
-ciascun Ente Creditore attribuisce ad ogni operazione di incasso un
-codice identificativo denominato “Identificativo Univoco di Versamento”
-(IUV) che non può essere associato nel tempo ad alcun altro incasso
-emesso dal medesimo Ente Creditore .....*\ ».
+Secondo quanto definito nel paragrafo 7.1 delle Linee guida, « *..., ciascun Ente Creditore attribuisce ad ogni operazione di incasso un codice identificativo denominato “Identificativo Univoco di Versamento” (IUV) che non può essere associato nel tempo ad alcun altro incasso emesso dal medesimo Ente Creditore .....*\ ».
 
-Il codice IUV assume quindi una rilevanza fondamentale « ... *al fine di
-consentire le attività di riconciliazione del pagamento da parte degli
-Enti Creditori e quelle di riversamento a cura dei Prestatori di servizi
-di pagamento...* » rappresentando pertanto uno degli elementi essenziali
-sui quali si base il sistema pagoPA\ :sup:`®`.
+Il codice IUV assume quindi una rilevanza fondamentale « ... *al fine di consentire le attività di riconciliazione del pagamento da parte degli Enti Creditori e quelle di riversamento a cura dei Prestatori di servizi di pagamento...* » rappresentando pertanto uno degli elementi essenziali sui quali si base il sistema pagoPA®.
 
-Lo stesso paragrafo 7.1 delle Linee guida concede agli Enti Creditori la
-possibilità di « *.... demandare ad un soggetto terzo, in tutto o in
-parte, la generazione dell’Identificativo Univoco di Versamento,
-*curando che ne sia mantenuta l’univocità nel tempo**\ ».
+Lo stesso paragrafo 7.1 delle Linee guida concede agli Enti Creditori la possibilità di « *.... demandare ad un soggetto terzo, in tutto o in parte, la generazione dell’Identificativo Univoco di Versamento, *curando che ne sia mantenuta l’univocità nel tempo**\ ».
 
 +----------------------------------------+----+
 | .. rubric:: Struttura del Codice IUV   |    |
 |    :name: struttura-del-codice-iuv     |    |
 +----------------------------------------+----+
 
-La generazione di un codice IUV che risulti ***univoco*** nel corso del
-tempo è una responsabilità in capo all'Ente Creditore, che è libero di
-strutturarne la composizione secondo le proprie esigenze, facendo
-attenzione che tale codifica sia conforme agli standard internazionali
-esistenti e tenga conto in prima istanza della natura del pagamento
-(dovuto o spontaneo) ed in seconda istanza del numero dei “punti di
-generazione” del codice stesso (vedi § 2.1.2).
+La generazione di un codice IUV che risulti ***univoco*** nel corso del tempo è una responsabilità in capo all'Ente Creditore, che è libero di strutturarne la composizione secondo le proprie esigenze, facendo attenzione che tale codifica sia conforme agli standard internazionali esistenti e tenga conto in prima istanza della natura del pagamento (dovuto o spontaneo) ed in seconda istanza del numero dei “punti di generazione” del codice stesso.
 
 Natura del pagamento
 ---------------------
 
-Come indicato nel capitolo 2 delle SANP (Allegato B alle Linee guida),
-gli incassi che un Ente Creditore deve gestire possono essere distinti
-secondo due diverse modalità:
+Come indicato nel capitolo 2 delle SANP (Allegato B alle Linee guida), gli incassi che un Ente Creditore deve gestire possono essere distinti secondo due diverse modalità:
 
 -  su iniziativa dell’Ente Creditore (o dovuti): è il caso in cui l’ente, attraverso un avviso (analogico o digitale), richiede un pagamento all’utilizzatore finale;
 
 -  su iniziativa del debitore (o spontanei): nei quali l’utilizzatore finale - che deve effettuare, a vario titolo, un versamento a favore dell’ente - si attiva in via autonoma.
 
-Nel primo caso (avviso analogico o digitale), in cui il pagamento può
-essere eseguito attraverso i canali messi a disposizione dai PSP (cfr. §
-2.2 delle SANP), si rinvia al successivo § 0.
+Nel primo caso (avviso analogico o digitale), in cui il pagamento può essere eseguito attraverso i canali messi a disposizione dai PSP.
 
-Nella seconda eventualità, associata ai pagamenti attivati preso l'Ente
-Creditore (cfr. § 2.1 delle SANP), si rimanda al successivo § 2.3. Si
-tenga presente che, se l’utilizzatore finale decide di effettuare il
-pagamento in un tempo successivo e allo scopo richiede la stampa di un
-avviso analogico oppure l'invio di un avviso digitale, si ricade nel
-caso precedente.
+Nella seconda eventualità, associata ai pagamenti attivati preso l'Ente Creditore, si rimanda al successivo. Si
+tenga presente che, se l’utilizzatore finale decide di effettuare il pagamento in un tempo successivo e allo scopo richiede la stampa di un avviso analogico oppure l'invio di un avviso digitale, si ricade nel caso precedente.
 
 Punti di generazione del codice IUV
--------------------------------------
+-----------------------------------
 
-Il sistema pagoPA® consente ad un Ente Creditore di utilizzare
-uno più intermediari e/o partner tecnologici: tale circostanza fa si che
-la generazione dello IUV possa avvenire in maniera indipendente presso
-più soggetti e possibilmente non sotto il controllo diretto dell’Ente
-Creditore.
+Il sistema pagoPA® consente ad un Ente Creditore di utilizzare uno più intermediari e/o partner tecnologici: tale circostanza fa si che la generazione dello IUV possa avvenire in maniera indipendente presso più soggetti e possibilmente non sotto il controllo diretto dell’Ente Creditore.
 
-Tale situazione può essere presente anche presso Enti Creditori dotati
-di un'organizzazione complessa e articolata in più unità autonome, che
-hanno la necessità di generare il codice IUV in maniera indipendente.
+Tale situazione può essere presente anche presso Enti Creditori dotati di un'organizzazione complessa e articolata in più unità autonome, che hanno la necessità di generare il codice IUV in maniera indipendente.
 
-Definiamo quindi "punto di generazione del codice IUV" qualsiasi entità,
-facente parte o meno dell'organizzazione dell'Ente Creditore, incaricata
-da questo di associare un codice IUV ad un unico pagamento presente
-nell'archivio dei pagamenti in attesa di cui al capitole 7 delle Linee
-guida.
+Definiamo quindi "punto di generazione del codice IUV" qualsiasi entità, facente parte o meno dell'organizzazione dell'Ente Creditore, incaricata da questo di associare un codice IUV ad un unico pagamento presente nell'archivio dei pagamenti in attesa di cui al capitole 7 delle Linee guida.
 
 Il codice di segregazione
 -------------------------
 
-Tutto ciò premesso, è necessario definire delle regole affinché la
-codifica del pagamento risulti effettivamente univoca all'interno
-dell'Ente Creditore nel corso del tempo: questo risultato si ottiene
-associando ad ogni punto di generazione del codice IUV un particolare
-codice che serve a segregare i domini di gestione dei pagamenti
-dell'ente.
+Tutto ciò premesso, è necessario definire delle regole affinché la codifica del pagamento risulti effettivamente univoca all'interno dell'Ente Creditore nel corso del tempo: questo risultato si ottiene associando ad ogni punto di generazione del codice IUV un particolare codice che serve a segregare i domini di gestione dei pagamenti dell'ente.
 
 Tale codice viene denominato "codice di segregazione".
 
-L'Agenzia per l'Italia Digitale attribuisce il codice di segregazione ad
-ogni punto di generazione del codice IUV in funzione del soggetto che
-svolge il ruolo di intermediario o partner tecnologico, secondo la
-seguente classificazione:
+L'Agenzia per l'Italia Digitale attribuisce il codice di segregazione ad ogni punto di generazione del codice IUV in funzione del soggetto che svolge il ruolo di intermediario o partner tecnologico, secondo la seguente classificazione:
 
 a. **Erogatori di servizi centralizzati**: intermediari tecnologici, riconosciuti da AgID, che erogano servizi in modalità accentrata a livello nazionale;
 
@@ -206,20 +153,11 @@ Figura 2 - Attribuzione del codice segregazione
 Erogatori di servizi centralizzati
 ----------------------------------
 
-Sono quei soggetti, censiti a livello generale, che erogano servizi
-centralizzati per una comunità di Enti Creditori con riferimento a
-procedure specifiche: quali, ad esempio, il SUAP, l'emissione on-line
-della Carta di Identità Elettronica, l'emissione dei certificati
-anagrafici tramite ANPR, ecc.
+Sono quei soggetti, censiti a livello generale, che erogano servizi centralizzati per una comunità di Enti Creditori con riferimento a procedure specifiche: quali, ad esempio, il SUAP, l'emissione on-line della Carta di Identità Elettronica, l'emissione dei certificati anagrafici tramite ANPR, ecc.
 
-In alcuni casi - come ad esempio quello legato all’emissione on-line
-della CIE o dei certificati anagrafici, che consentono di effettuare
-contestualmente il pagamento del servizio - l’utilizzo della procedura
-centralizzata sarà obbligatorio per tutti i comuni italiani.
+In alcuni casi - come ad esempio quello legato all’emissione on-line della CIE o dei certificati anagrafici, che consentono di effettuare contestualmente il pagamento del servizio - l’utilizzo della procedura centralizzata sarà obbligatorio per tutti i comuni italiani.
 
-L'attribuzione della qualifica di erogatore di servizi centralizzati
-deve essere richiesta all'AgID che provvederà ad aggiornare l'elenco
-riportato in .
+L'attribuzione della qualifica di erogatore di servizi centralizzati deve essere richiesta all'AgID che provvederà ad aggiornare l'elenco riportato in .
 
 \ **Tabella 1 - Elenco servizi centralizzati**
 
@@ -236,15 +174,9 @@ riportato in .
 Punti di generazione del codice IUV
 -----------------------------------
 
-AgID attribuirà uno o più codici segregazione (progressivamente a
-salire: da 00 a 49) ad ognuno degli intermediari/partner tecnologici,
-ovvero entità autonome dell'Ente Creditore, secondo quanto da questi
-richiesto.
+AgID attribuirà uno o più codici segregazione (progressivamente a salire: da 00 a 49) ad ognuno degli intermediari/partner tecnologici, ovvero entità autonome dell'Ente Creditore, secondo quanto da questi richiesto.
 
-Se un Ente Creditore genera in proprio attraverso entità autonome il
-codice IUV e si avvale contemporaneamente di un intermediario o di un
-partner tecnologico, le entità autonome dovranno essere censite alla
-stregua di intermediario/partner dello stesso ente.
+Se un Ente Creditore genera in proprio attraverso entità autonome il codice IUV e si avvale contemporaneamente di un intermediario o di un partner tecnologico, le entità autonome dovranno essere censite alla stregua di intermediario/partner dello stesso ente.
 
 Numero avviso e codice IUV nel caso di pagamenti attivati presso i PSP
 ----------------------------------------------------------------------
@@ -257,17 +189,17 @@ indicati assumono il seguente significato:
 
 <aux digit (1n)>[<application code> (2n)]<codice IUV (15\|17n)>  (A)
 
-+-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                                                   |                                                                                                                                                                                                                                                                                |
-+===================================================================+=================================================================================================================================================================================================================================================================================+
-|     **aux digit**                                                 | Valore numerico che definisce la struttura del codice IUV in funzione del numero di punti di generazione dello stesso (vedi a pagina 15);                                                                                                                                       |
-+-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|     **application code**                                          | Valore numerico che serve ad individuare la porzione dell’archivio dei pagamenti in attesa interessata dall’operazione [3]_. Il dato è presente o meno in funzione del componente <aux digit> (vedi a pagina 15);                                                               |
-+-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|     **codice IUV**                                                | Rappresenta l'identificativo univoco di versamento, così come definito nel paragrafo 7.1 delle Linee guida. Ad un singolo pagamento in attesa può essere associato uno ed un solo codice IUV, indipendentemente dai possibili diversi strumenti messi a disposizioni dal PSP.   |
-|                                                                   |                                                                                                                                                                                                                                                                                 |
-|                                                                   | Per la struttura del codice IUV si veda il § 2.2.1.                                                                                                                                                                                                                             |
-+-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                               |                                                                                                                                                                                                                                                                                |
++===================================================================+============================================================================================================================================================================================================================================+
+|     **aux digit**             | Valore numerico che definisce la struttura del codice IUV in funzione del numero di punti di generazione dello stesso (vedi a pagina 15);                                                                                                                                      |
++-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|     **application code**      | Valore numerico che serve ad individuare la porzione dell’archivio dei pagamenti in attesa interessata dall’operazione [3]_. Il dato è presente o meno in funzione del componente <aux digit> (vedi a pagina 15);                                                              |
++-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|     **codice IUV**            | Rappresenta l'identificativo univoco di versamento, così come definito nel paragrafo 7.1 delle Linee guida. Ad un singolo pagamento in attesa può essere associato uno ed un solo codice IUV, indipendentemente dai possibili diversi strumenti messi a disposizioni dal PSP.  |
+|                               |                                                                                                                                                                                                                                                                                |
+|                               | Per la struttura del codice IUV si vedano i paragrafi successivi.                                                                                                                                                                                                              |
++-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Si noti come, nella rappresentazione del precedente schema e di quelli
 successivi, i componenti all'interno delle parentesi quadre possano non
@@ -278,16 +210,14 @@ che può assumere la lunghezza del componente stesso.
 Composizione del codice IUV
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-La composizione del **codice IUV** è rappresentata dallo schema (B) come
-concatenazione dei suoi componenti, che assumono il seguente
-significato:
+La composizione del **codice IUV** è rappresentata dallo schema (B) come concatenazione dei suoi componenti, che assumono il seguente significato:
 
 [<Codice segregazione (2n)>]<IUV base (13\|15\|17n)>[<IUV check digit (2n)]>   (B)
 
 +--------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                                                                                |                                                                                                                                                                                                                                                                        |
 +================================================================================+========================================================================================================================================================================================================================================================================+
-|     **Codice segregazione **                                                   | Valore numerico che rappresenta il **Codice di Segregazione** (vedi § ).                                                                                                                                                                                               |
+|     **Codice segregazione **                                                   | Valore numerico che rappresenta il **Codice di Segregazione**.                                                                                                                                                                                               |
 |                                                                                |                                                                                                                                                                                                                                                                        |
 |                                                                                | Il componente è presente o meno nella struttura del codice IUV in funzione del componente <aux digit> del Numero Avviso (vedi ).                                                                                                                                       |
 +--------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -334,7 +264,7 @@ generazione dello IUV**
 Come si vede da un'analisi della , nei casi in cui <aux digit> sia
 diverso da 0 la lunghezza del codice IUV è di 17 posizioni a scapito del
 componente <application code> che scompare e, in alcuni casi, viene
-sostituito dal componente <codice segregazione> (cfr. § 2.1.3).
+sostituito dal componente <codice segregazione>.
 
 Valore 0 del componente <Aux Digit>
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -390,8 +320,7 @@ aziendali, anche in questo caso è compito dell'ente attivare la
 procedura aziendale di competenza.
 
 Lo schema è utilizzabile se il "punto di generazione del codice IUV" è
-unico. Gli Enti Creditori che usufruiscono di servizi centralizzati
-(vedi § 2.1.3) possono utilizzare questo schema se, nella generazione
+unico. Gli Enti Creditori che usufruiscono di servizi centralizzati possono utilizzare questo schema se, nella generazione
 dello IUV, hanno cura che i primi due caratteri a sinistra del
 componente <IUV base> siano diversi dai tutti i valori presenti nella
 colonna “codice segregazione” di Tabella 1 relativa agli erogatori di
@@ -476,8 +405,7 @@ uno dei due seguenti schemi:
 +-------------------------------------------------------+-------+
 
 Nel caso in cui presso un Ente Creditore siano presenti “punti di
-generazione” del codice IUV tra loro diversi e non coordinati (vedi §§
-2.1.2 e 2.1.3), il codice IUV, generato per essere usato nell'ambito dei
+generazione” del codice IUV tra loro diversi e non coordinati, il codice IUV, generato per essere usato nell'ambito dei
 pagamenti attivati presso l'ente, potrà essere composto secondo uno dei
 due seguenti schemi:
 
@@ -510,15 +438,12 @@ INFORMATION* <http://www.europeanpaymentscouncil.eu/content.cfm?page=eact_standa
 e finalizzata al trattamento automatizzato delle informazioni tra
 partner commerciali.
 
-In particolare, utilizzando questa configurazione, potranno essere
-utilizzate due stringhe di caratteri alternative tra loro in funzione
-della modalità di generazione del codice IUV da parte dell’Ente
-Creditore (vedi capitolo ):
+In particolare, utilizzando questa configurazione, potranno essere utilizzate due stringhe di caratteri alternative tra loro in funzione della modalità di generazione del codice IUV da parte dell’Ente Creditore (vedi capitolo ):
 
 +---------------------------------------------------+------------------------------------------+
-| **/RFS/<IUV>/<importo>[/TXT/<descrizione >]**     | Schemi (D), (F) (vedi § )                |
+| **/RFS/<IUV>/<importo>[/TXT/<descrizione >]**     | Schemi (D), (F)                          |
 +===================================================+==========================================+
-| **/RFB/<IUV>[/<importo>][/TXT/<descrizione >]**   | Schemi (A), (B), (C), (E) (vedi §§ , )   |
+| **/RFB/<IUV>[/<importo>][/TXT/<descrizione >]**   | Schemi (A), (B), (C), (E)                |
 +---------------------------------------------------+------------------------------------------+
 
 Dove “/\ **RFS/**\ ” e “/\ **RFB/**\ ” sono costanti (*tag*), **<IUV>**
@@ -747,7 +672,7 @@ Dove:
 
 Per quanto riguarda il riversamento relativo ai pagamenti riguardanti la
 Marca da bollo digitale, per i quali non è necessario effettuare alcun
-riversamento, si rimanda a quanto indicato al § 5.1.
+riversamento.
 
 +-----------------------------------------+----+
 | .. rubric:: Flusso di Rendicontazione   |    |
@@ -891,49 +816,21 @@ rendicontazione è riportato nella colonna “contenuto” della , di seguito
 sono riportate alcune precisazioni sui dati presenti nel flusso di
 rendicontazione:
 
-    **identificativoFlusso:** deve essere lo stesso riportato nel
-    componente **< idFlusso>** della causale del SEPA Credit Transfer di
-    Riversamento (dato “\ *Unstructured Remittance Information*\ ” -
-    attributo AT-05, vedi capitolo );
+    **identificativoFlusso:** deve essere lo stesso riportato nel componente **< idFlusso>** della causale del SEPA Credit Transfer di Riversamento (dato “\ *Unstructured Remittance Information*\ ” - attributo AT-05, vedi capitolo );
 
-    **identificativoUnivocoMittente:** la struttura deve coincidere con
-    quella presente nell’elemento identificativoUnivocoAttestante
-    indicato della RT rendicontata (cfr. § 5.3.2 dell’Allegato B alle
-    Linee guida *“Specifiche Attuative del Nodo dei Pagamenti-SPC”*).
+    **identificativoUnivocoMittente:** la struttura deve coincidere con quella presente nell’elemento identificativoUnivocoAttestante indicato della RT rendicontata.
 
-    **identificativoUnivocoRegolamento:** *Transaction Reference Number*
-    (TRN) del SEPA Credit Transfer di Riversamento (vedi capitolo ).
-    Tale dato deve essere utilizzato per abbinare detta informazione
-    proveniente dal proprio istituto tesoriere/cassiere con il flusso
-    informativo ricevuto dal prestatore di servizi di pagamento che
-    esegue il pagamento stesso;
+    **identificativoUnivocoRegolamento:** *Transaction Reference Number* (TRN) del SEPA Credit Transfer di Riversamento (vedi capitolo ). Tale dato deve essere utilizzato per abbinare detta informazione proveniente dal proprio istituto tesoriere/cassiere con il flusso informativo ricevuto dal prestatore di servizi di pagamento che esegue il pagamento stesso;
 
-    **identificativoUnivocoRiscossione:** rappresenta l’identificativo
-    con il quale il prestatore di servizi di pagamento individua la
-    singola operazione. Nel caso di utilizzo dell’infrastruttura di cui
-    all’articolo 81, comma 2-bis del CAD, tale informazione si riferisce
-    all’omonimo dato presente nella “Ricevuta Telematica” di cui alla
-    Sezione II delle , alle quali si rimanda per i dettagli;
+    **identificativoUnivocoRiscossione:** rappresenta l’identificativo con il quale il prestatore di servizi di pagamento individua la singola operazione. Nel caso di utilizzo dell’infrastruttura di cui all’articolo 81, comma 2-bis del CAD, tale informazione si riferisce all’omonimo dato presente nella “Ricevuta Telematica” di cui alla Sezione II delle , alle quali si rimanda per i dettagli;
 
-    **indiceDatiSingoloPagamento:** dato facoltativo che rappresenta la
-    i-esima occorrenza di pagamento all’interno della struttura
-    datiSingoloPagamento presente nell’oggetto RT (“Ricevuta
-    Telematica”) di cui alla Sezione II dell’Allegato B alle Linee guida
-    ;
+    **indiceDatiSingoloPagamento:** dato facoltativo che rappresenta la i-esima occorrenza di pagamento all’interno della struttura datiSingoloPagamento presente nell’oggetto RT (“Ricevuta Telematica”) di cui alla Sezione II dell’Allegato B alle Linee guida;
 
-    **singoloImportoPagato:** il riferimento alla “revoca” del pagamento
-    riguarda al momento il solo processo di “Storno” (vedi §§ 2.1.4,
-    8.2.5 e 9.2.5 *,* alle quali si rimanda per i dettagli);
+    **singoloImportoPagato:** il riferimento alla “revoca” del pagamento riguarda al momento il solo processo di “Storno”;
 
-    **codiceEsitoSingoloPagamento:** vedi quanto indicato al dato
-    singoloImportoPagato per ciò che attiene alla dizione “revoca”;
+    **codiceEsitoSingoloPagamento:** vedi quanto indicato al dato singoloImportoPagato per ciò che attiene alla dizione “revoca”;
 
-    **dataEsitoSingoloPagamento:** tale data deve coincidere con quella
-    dell’omologo dato presente nell’oggetto RT (“Ricevuta Telematica”) o
-    nell’elemento dataEsitoRevoca della struttura datiSingolaRevoca
-    presente nell’oggetto ER (“Esito Revoca”) di cui alla Sezione II
-    dell’Allegato B alle Linee guida . Per ciò che attiene alla dizione
-    “revoca” si veda quanto indicato per il dato singoloImportoPagato.
+    **dataEsitoSingoloPagamento:** tale data deve coincidere con quella dell’omologo dato presente nell’oggetto RT (“Ricevuta Telematica”) o nell’elemento dataEsitoRevoca della struttura datiSingolaRevoca presente nell’oggetto ER (“Esito Revoca”) di cui alla Sezione II dell’Allegato B alle Linee guida . Per ciò che attiene alla dizione “revoca” si veda quanto indicato per il dato singoloImportoPagato.
 
 +---------------------------------------------------------------+----+
 | .. rubric:: Standardizzazione del dato identificativoFlusso   |    |
@@ -980,7 +877,10 @@ Esempi: **2015-07-15xxxxxxxx-0000000001**
 |    :name: riconciliazione-del-riversamento     |    |
 +------------------------------------------------+----+
 
-Tenuto presente quanto indicato al § per ciò che attiene ai pagamenti riguardanti la Marca da bollo digitale, la riconciliazione dei riversamenti effettuati dal prestatore di servizi di pagamento avviene a cura dell’Ente Creditore in due passi successivi:
+Tenuto presente quanto indicato per ciò che attiene ai pagamenti
+riguardanti la Marca da bollo digitale, la riconciliazione dei
+riversamenti effettuati dal prestatore di servizi di pagamento avviene a
+cura dell’Ente Creditore in due passi successivi:
 
 a) Abbinamento tra il componente **<** **idFlusso >** della causale del SEPA Credit Transfer con il quale è stato effettuato il riversamento verso l’Ente Creditore (vedi capitolo ) ed il dato identificativoFlusso presente nel flusso di rendicontazione di cui al capitolo ; come riscontro dovranno coincidere le informazioni:
 
@@ -1002,15 +902,24 @@ b) Una volta completata la fase di abbinamento precedente, i singoli pagamenti c
 
 Appendice 1 - Creditor Reference - Standard ISO 11649:2009
 
-Secondo lo standard ISO 11649:2009 il *Creditor Reference* è un costrutto alfanumerico [10]_ lungo al massimo 25 caratteri, così composto:
+Secondo lo standard ISO 11649:2009 il *Creditor Reference* è un
+costrutto alfanumerico [10]_ lungo al massimo 25 caratteri, così
+composto:
 
 **< identifier > < check digits > < reference >**
 
-All’inizio della struttura è posizionata la costante “\ **RF**\ ” (identifier), di seguito sono presenti due numeri (check digits), mentre la parte rimanente (reference) può essere lunga sino ad un massimo di 21 caratteri, il cui contenuto può essere strutturato senza alcuna restrizione nell’ambito del dominio alfanumerico.
+All’inizio della struttura è posizionata la costante “\ **RF**\ ”
+(identifier), di seguito sono presenti due numeri (check digits), mentre
+la parte rimanente (reference) può essere lunga sino ad un massimo di 21
+caratteri, il cui contenuto può essere strutturato senza alcuna
+restrizione nell’ambito del dominio alfanumerico.
 
-Il componente check digits ha lo scopo di verificare che il componente *reference* sia stata correttamente impostata e viene calcolata secondo l’algoritmo ISO/IEC 7064.
+Il componente check digits ha lo scopo di verificare che il componente
+*reference* sia stata correttamente impostata e viene calcolata secondo
+l’algoritmo ISO/IEC 7064.
 
-Per una informativa più esaustiva possono essere consultati anche i seguiti link:
+Per una informativa più esaustiva possono essere consultati anche i
+seguiti link:
 
 `*http://www.iso.org/iso/catalogue\_detail.htm?csnumber=50649* <http://www.iso.org/iso/catalogue_detail.htm?csnumber=50649>`__
 
@@ -1088,42 +997,72 @@ strutturati dei conti correnti bancari.
 L’algoritmo per il calcolo dei check digits che si applica alla stringa
 numerica risultante dal processo di conversione è il seguente:
 
-1. Calcolare il resto della divisione per 97 (modulo 97) di detto numero,
+1. Calcolare il resto della divisione per 97 (modulo 97) di detto
+   numero,
 
 2. Sottrarre il risultato ottenuto da 98;
 
-3. Se tale valore è maggiore o uguale a 10, il dato check digits è il valore ottenuto al punto 2, altrimenti anteporre uno zero (esempio: se il risultato è 4, il valore del check digits è 04).
+3. Se tale valore è maggiore o uguale a 10, il dato check digits è il
+   valore ottenuto al punto 2, altrimenti anteporre uno zero
+   (esempio: se il risultato è 4, il valore del check digits è 04).
 
 FINE DOCUMENTO
 
-.. [1] Vedi http://www.indicepa.gov.it/
+.. [1]
+   Vedi http://www.indicepa.gov.it/
 
-.. [2] La struttura del Numero Avviso si adegua a prassi e standard "de-facto" preesistenti e consolidati presso i PSP.
+.. [2]
+   La struttura del Numero Avviso si adegua a prassi e standard
+   "de-facto" preesistenti e consolidati presso i PSP.
 
-.. [3] La componente <**application code>** identifica il singolo archivio di pagamenti in attesa e viene indirizzato mediante i meccanismi di configurazione del Nodo dei Pagamenti-SPC, che in questo modo sarà in grado di individuare il canale corretto di inoltro delle richieste di verifica e attivazione di pagamento (cfr § 8.2.3 delle SANP).
+.. [3]
+   La componente <**application code>** identifica il singolo archivio
+   di pagamenti in attesa e viene indirizzato mediante i meccanismi di
+   configurazione del Nodo dei Pagamenti-SPC, che in questo modo sarà in
+   grado di individuare il canale corretto di inoltro delle richieste di
+   verifica e attivazione di pagamento.
 
    In sintesi questa informazione rappresenta "l'indirizzo"
    dell'archivio dove sono conservate le richieste in attesa che hanno
    dato luogo all’avviso di pagamento.
 
-.. [4] È il caso, ad esempio, dell'Ente Creditore Equitalia che identifica le proprie cartelle con un codice denominato RAV, che ha le stesse caratteristiche di lunghezza e formato del codice IUV, ma utilizza regole diverse di generazione.
+.. [4]
+   È il caso, ad esempio, dell'Ente Creditore Equitalia che identifica
+   le proprie cartelle con un codice denominato RAV, che ha le stesse
+   caratteristiche di lunghezza e formato del codice IUV, ma utilizza
+   regole diverse di generazione.
 
-.. [5] Si veda, ad esempio, il documento “RF Creditor reference” al seguente indirizzo
-`*https://www.ebaportal.eu/\_Download/Research%20and%20Analysis/2010/rf\_creditor\_reference.pdf* <https://www.ebaportal.eu/_Download/Research%20and%20Analysis/2010/rf_creditor_reference.pdf>`__,
+.. [5]
+    Si veda, ad esempio, il documento “RF Creditor reference” al
+   seguente indirizzo
+
+   `*https://www.ebaportal.eu/\_Download/Research%20and%20Analysis/2010/rf\_creditor\_reference.pdf* <https://www.ebaportal.eu/_Download/Research%20and%20Analysis/2010/rf_creditor_reference.pdf>`__,
 
    Vedi anche il calcolatore di Creditor Reference alla pagina
    `*http://www.jknc.eu/RFcalculator* <http://www.jknc.eu/RFcalculator>`__
 
-.. [6] Cfr documentazione all’indirizzo
+.. [6]
+   Cfr documentazione all’indirizzo
    `*http://www.europeanpaymentscouncil.eu/content.cfm?page=sepa\_credit\_transfer* <http://www.europeanpaymentscouncil.eu/content.cfm?page=sepa_credit_transfer>`__
 
-.. [7] A titolo esemplificativo e non esaustivo, per gli Enti Creditori che svolgono il servizio di riscossione, si segnalano le sanzioni stabilite all’articolo 47 del Decreto legislativo del 13 aprile 1999, n. 112.
+.. [7]
+   A titolo esemplificativo e non esaustivo, per gli Enti Creditori che
+   svolgono il servizio di riscossione, si segnalano le sanzioni
+   stabilite all’articolo 47 del Decreto legislativo del 13 aprile 1999,
+   n. 112.
 
-.. [8] Ad esempio attraverso i flussi automatizzati dell’ordinativo informatico.
+.. [8]
+   Ad esempio attraverso i flussi automatizzati dell’ordinativo
+   informatico.
 
-.. [9] ex art. 6, comma 2, provvedimento del Direttore dell’Agenzia delle Entrate del 19 settembre 2014.
+.. [9]
+   ex art. 6, comma 2, provvedimento del Direttore dell’Agenzia delle
+   Entrate del 19 settembre 2014.
 
-.. [10] L'insieme delle lettere dell'alfabeto latino e dei numeri arabi. Appartengono a quest'insieme le lettere minuscole dalla a alla z, le maiuscole dalla A alla Z e i numeri da 0 a 9
+.. [10]
+   L'insieme delle lettere dell'alfabeto latino e dei numeri arabi.
+   Appartengono a quest'insieme le lettere minuscole dalla a alla z, le
+   maiuscole dalla A alla Z e i numeri da 0 a 9
 
 .. |image0| image:: media/image1.png
    :width: 4.05000in
