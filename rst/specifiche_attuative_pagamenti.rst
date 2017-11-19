@@ -1,4 +1,3 @@
-
 Ciclo di vita del pagamento
 -----------------------------
 
@@ -212,20 +211,14 @@ Composizione del codice IUV
 
 La composizione del **codice IUV** è rappresentata dallo schema (B) come concatenazione dei suoi componenti, che assumono il seguente significato:
 
-[<Codice segregazione (2n)>]<IUV base (13\|15\|17n)>[<IUV check digit (2n)]>   (B)
+    ``[<Codice segregazione (2n)>]<IUV base (13\|15\|17n)>[<IUV check digit (2n)]>``   (B)
 
-+--------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                                                                |                                                                                                                                                                                                                                                                        |
-+================================================================================+========================================================================================================================================================================================================================================================================+
-|     **Codice segregazione **                                                   | Valore numerico che rappresenta il **Codice di Segregazione**.                                                                                                                                                                                               |
-|                                                                                |                                                                                                                                                                                                                                                                        |
-|                                                                                | Il componente è presente o meno nella struttura del codice IUV in funzione del componente <aux digit> del Numero Avviso (vedi ).                                                                                                                                       |
-+--------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|     **IUV base**                                                               | Valore numerico che ogni Ente Creditore è libero di strutturare secondo le proprie esigenze, nei limiti indicati dalle presenti specifiche attuative. Il componente assume una lunghezza variabile in funzione del componente <aux digit> del Numero Avviso (vedi ).   |
-+--------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|     **IUV check digit**                                                        | Rappresenta il codice di controllo dello IUV, calcolato con l'algoritmo precisato nei paragrafi successivi. Il componente è presente o meno nella struttura del codice IUV in funzione del componente <aux digit> del Numero Avviso (vedi a pagina 15).                |
-+--------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	
+	- **Codice segregazione** : valore numerico che rappresenta il **Codice di Segregazione**. Il componente è presente o meno nella struttura del codice IUV in funzione del componente <aux digit> del Numero Avviso.
+	- **IUV base** : valore numerico che ogni Ente Creditore è libero di strutturare secondo le proprie esigenze, nei limiti indicati dalle presenti specifiche attuative. Il componente assume una lunghezza variabile in funzione del componente <aux digit> del Numero Avviso.
+    - **IUV check digit** : Rappresenta il codice di controllo dello IUV, calcolato con l'algoritmo precisato nei paragrafi successivi. Il componente è presente o meno nella struttura del codice IUV in funzione del componente <aux digit> del Numero Avviso.
 
+	
 La previsione del carattere di controllo dello IUV (<IUV check digit>)
 non comporta per il PSP l’obbligo bensì la facoltà di verifica,
 consentendo al PSP stesso di controllare il Numero Avviso, con evidente
@@ -412,7 +405,7 @@ due seguenti schemi:
 +---------------------------------------------------------------------------------+-------+
 | <codice segregazione (2n)><codice alfanumerico (max 33)>                        | (E)   |
 +=================================================================================+=======+
-| RF <check digit (2n)><codice segregazione (2n)><codice alfanumerico (max 19)>   | (F)   |
+| RF <check digit (2n)><codice segregazionecodice segregazione (2n)><codice alfanumerico (max 19)>   | (F)   |
 +---------------------------------------------------------------------------------+-------+
 
 Si tenga in ogni caso presente che, al fine di evitare duplicazioni
@@ -581,10 +574,6 @@ PSP.
 +-----------------------------------------------------------------+------------+
 | .. rubric:: Utilizzo del bollettino di conto corrente postale   | |image9|   |
 |    :name: utilizzo-del-bollettino-di-conto-corrente-postale     |            |
-+=================================================================+============+
-| .. rubric::                                                     |            |
-|    :name: section                                               |            |
-|    :class: ListParagraph                                        |            |
 +-----------------------------------------------------------------+------------+
 
 La causale del versamento - obbligatoria per le pubbliche
@@ -594,7 +583,7 @@ pubblici servizi e deve essere conforme al formato descritto nel
 capitolo .
 
 Riconciliazione del pagamento
-=============================
+-----------------------------
 
 I pagamenti che non siano oggetto di un riversamento cumulativo da parte
 del prestatore di servizi di pagamento dell’utilizzatore finale saranno
@@ -694,9 +683,9 @@ Le colonne *Liv*, *Gen*, *Occ* e *Len* della citata tabella assumono il
 seguente significato:
 
 +----------------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
-| **colonna **   | *Liv*    | indica il livello di indentazione del dato al fine di rendere evidenti le strutture che contengono ulteriori informazioni (colonna “Gen” uguale a “\ *s*\ ”): esempio, le strutture di livello 1 sono formate da tutti dati di livello superiore ad 1, quelle di livello 2 sono formate da tutti dati di livello superiore a 2, e così via.   |
+| **colonna **   | *Liv*    | indica il livello di indentazione del dato al fine di rendere evidenti le strutture che contengono ulteriori informazioni (colonna “Gen” uguale a “\ *s*\ ”): esempio, le strutture di livello 1 sono formate da tutti dati di livello superiore ad 1, quelle di livello 2 sono formate da tutti dati di livello superiore a 2, e così via.   |                                                       |
 +================+==========+===============================================================================================================================================================================================================================================================================================================================================+=======================================================+
-| **colonna **   | *Gen*    | indica il genere (tipo) del dato da utilizzare; può assumere i seguenti valori:                                                                                                                                                                                                                                                               |
+| **colonna **   | *Gen*    | indica il genere (tipo) del dato da utilizzare; può assumere i seguenti valori:                                                                                                                                                                                                                                                               |                                                       |
 +----------------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
 |                |          | *s*                                                                                                                                                                                                                                                                                                                                           | struttura che può contenere altre strutture o dati,   |
 +----------------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
@@ -704,11 +693,11 @@ seguente significato:
 +----------------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
 |                |          | *n*                                                                                                                                                                                                                                                                                                                                           | dato numerico.                                        |
 +----------------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
-| **colonna **   | *Occ*    | indica le “occorrenze” del dato nel formato ***min..max***.                                                                                                                                                                                                                                                                                   |
+| **colonna **   | *Occ*    | indica le “occorrenze” del dato nel formato ***min..max***.                                                                                                                                                                                                                                                                                   |                                                       |
 +----------------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
-| **colonna **   | *Len *   | indica la lunghezza del dato nel formato ***min..max***.                                                                                                                                                                                                                                                                                      |
-|                |          |                                                                                                                                                                                                                                                                                                                                               |
-|                |          | Nel caso si tratti di una lunghezza fissa comparirà solo il dato *len*, nel caso di lunghezze fisse in alternativa la notazione sarà *len1* \| *len2*, ecc.                                                                                                                                                                                   |
+| **colonna **   | *Len *   | indica la lunghezza del dato nel formato ***min..max***.                                                                                                                                                                                                                                                                                      |                                                       |
+|                |          |                                                                                                                                                                                                                                                                                                                                               |                                                       |
+|                |          | Nel caso si tratti di una lunghezza fissa comparirà solo il dato *len*, nel caso di lunghezze fisse in alternativa la notazione sarà *len1* \| *len2*, ecc.                                                                                                                                                                                   |                                                       |
 +----------------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
 
 \ **Tabella 3 - Flusso per la rendicontazione - Schema dat**\ i
@@ -858,7 +847,7 @@ dove i componenti sopra indicati assumono il seguente significato:
 |                               | I caratteri ammessi all’interno della stringa sono: numeri da 0 a 9, lettere dell’alfabeto latino maiuscole e minuscole ed i seguenti caratteri.                                                                                                                            |
 |                               |                                                                                                                                                                                                                                                                             |
 |                               | +-------------+---------------+------------+-----------------------+                                                                                                                                                                                                        |
-|                               | | **ASCII**   | **Simbolo**   | **Nome**   |                                                                                                                                                                                                                                |
+|                               | | **ASCII**   | **Simbolo**   | **Nome**   |                       |                                                                                                                                                                                                        |
 |                               | +=============+===============+============+=======================+                                                                                                                                                                                                        |
 |                               | | **Dec**     | **Hex**       |            |                       |                                                                                                                                                                                                        |
 |                               | +-------------+---------------+------------+-----------------------+                                                                                                                                                                                                        |
@@ -963,7 +952,7 @@ seguiti link:
 | **F**           | 15           | 70          | **V**           | 31           | 86          | **l**           | 21           | 108         |                 |              |             |
 +-----------------+--------------+-------------+-----------------+--------------+-------------+-----------------+--------------+-------------+-----------------+--------------+-------------+
 
-\ **Tabella 4 - Valori per la conversione dei caratteri **
+\ **Tabella 4 - Valori per la conversione dei caratteri**
 
 Tutti valori della stringa di caratteri reference sono convertiti
 sequenzialmente, uno ad uno, in numeri applicando il valore presente
@@ -1006,7 +995,7 @@ numerica risultante dal processo di conversione è il seguente:
    valore ottenuto al punto 2, altrimenti anteporre uno zero
    (esempio: se il risultato è 4, il valore del check digits è 04).
 
-FINE DOCUMENTO
+
 
 .. [1]
    Vedi http://www.indicepa.gov.it/
