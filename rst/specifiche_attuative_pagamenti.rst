@@ -405,7 +405,7 @@ due seguenti schemi:
 +---------------------------------------------------------------------------------+-------+
 | <codice segregazione (2n)><codice alfanumerico (max 33)>                        | (E)   |
 +=================================================================================+=======+
-| RF <check digit (2n)><codice segregazione(2n)><codice alfanumerico (max 19)>   | (F)   |
+| RF <check digit (2n)><codice segregazione(2n)><codice alfanumerico (max 19)>    | (F)   |
 +---------------------------------------------------------------------------------+-------+
 
 Si tenga in ogni caso presente che, al fine di evitare duplicazioni
