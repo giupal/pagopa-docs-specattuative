@@ -214,9 +214,9 @@ La composizione del **codice IUV** è rappresentata dallo schema (B) come concat
     ``[<Codice segregazione (2n)>]<IUV base (13\|15\|17n)>[<IUV check digit (2n)]>``   (B)
 
 	
-	- **Codice segregazione** : valore numerico che rappresenta il **Codice di Segregazione**. Il componente è presente o meno nella struttura del codice IUV in funzione del componente <aux digit> del Numero Avviso.
-	- **IUV base** : valore numerico che ogni Ente Creditore è libero di strutturare secondo le proprie esigenze, nei limiti indicati dalle presenti specifiche attuative. Il componente assume una lunghezza variabile in funzione del componente <aux digit> del Numero Avviso.
-    - **IUV check digit** : Rappresenta il codice di controllo dello IUV, calcolato con l'algoritmo precisato nei paragrafi successivi. Il componente è presente o meno nella struttura del codice IUV in funzione del componente <aux digit> del Numero Avviso.
+- **Codice segregazione** : valore numerico che rappresenta il **Codice di Segregazione**. Il componente è presente o meno nella struttura del codice IUV in funzione del componente <aux digit> del Numero Avviso.
+- **IUV base** : valore numerico che ogni Ente Creditore è libero di strutturare secondo le proprie esigenze, nei limiti indicati dalle presenti specifiche attuative. Il componente assume una lunghezza variabile in funzione del componente <aux digit> del Numero Avviso.
+- **IUV check digit** : Rappresenta il codice di controllo dello IUV, calcolato con l'algoritmo precisato nei paragrafi successivi. Il componente è presente o meno nella struttura del codice IUV in funzione del componente <aux digit> del Numero Avviso.
 
 	
 La previsione del carattere di controllo dello IUV (<IUV check digit>)
@@ -1022,10 +1022,9 @@ numerica risultante dal processo di conversione è il seguente:
    regole diverse di generazione.
 
 .. [5]
-    Si veda, ad esempio, il documento "RF Creditor reference" al seguente indirizzo
-   `*https://www.ebaportal.eu/\_Download/Research%20and%20Analysis/2010/rf\_creditor\_reference.pdf* <https://www.ebaportal.eu/_Download/Research%20and%20Analysis/2010/rf_creditor_reference.pdf>`__,
-
-   Vedi anche il calcolatore di Creditor Reference alla pagina
+   Si veda, ad esempio, il documento "RF Creditor reference" al seguente indirizzo
+   `*https://www.ebaportal.eu/\_Download/Research%20and%20Analysis/2010/rf\_creditor\_reference.pdf* <https://www.ebaportal.eu/_Download/Research%20and%20Analysis/2010/rf_creditor_reference.pdf>`__
+   Si veda anche il calcolatore di Creditor Reference alla pagina
    `*http://www.jknc.eu/RFcalculator* <http://www.jknc.eu/RFcalculator>`__
 
 .. [6]
