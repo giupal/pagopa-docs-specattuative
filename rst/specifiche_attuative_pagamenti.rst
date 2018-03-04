@@ -1022,9 +1022,7 @@ numerica risultante dal processo di conversione è il seguente:
    regole diverse di generazione.
 
 .. [5]
-    Si veda, ad esempio, il documento "RF Creditor reference" al
-   seguente indirizzo
-
+    Si veda, ad esempio, il documento "RF Creditor reference" al seguente indirizzo
    `*https://www.ebaportal.eu/\_Download/Research%20and%20Analysis/2010/rf\_creditor\_reference.pdf* <https://www.ebaportal.eu/_Download/Research%20and%20Analysis/2010/rf_creditor_reference.pdf>`__,
 
    Vedi anche il calcolatore di Creditor Reference alla pagina
