@@ -840,17 +840,16 @@ dove i componenti sopra indicati assumono il seguente significato:
 
 
 I caratteri ammessi all'interno della stringa sono: numeri da 0 a 9, lettere dell'alfabeto latino maiuscole e minuscole ed i seguenti caratteri. 
+
 +-------------+---------------+------------+-----------------------+                                                                                                                                                                                                        |
 | **ASCII**   | **Simbolo**   | **Nome**   |                       |                                                                                                                                                                                                        |
 +=============+===============+============+=======================+                                                                                                                                                                                                        |
 | **Dec**     | **Hex**       |            |                       |                                                                                                                                                                                                        |
 +-------------+---------------+------------+-----------------------+                                                                                                                                                                                                        |
-| 45          | 2D            | -          | minus sign - hyphen   |                                                                                                                                                                                                        |
+| 45          | 2D            | \-          | minus sign - hyphen   |                                                                                                                                                                                                        |
 +-------------+---------------+------------+-----------------------+                                                                                                                                                                                                        |
 | 95          | 5F            | \_         | underscore            |                                                                                                                                                                                                        |
 +-------------+---------------+------------+-----------------------+                                                                                                                                                                                                        |
-
-
 
 Esempi: **2015-07-15xxxxxxxx-0000000001**
 
@@ -1000,12 +999,11 @@ numerica risultante dal processo di conversione è il seguente:
    "de-facto" preesistenti e consolidati presso i PSP.
 
 .. [3]
-   La componente <**application code>** identifica il singolo archivio
+   La componente **<application code>** identifica il singolo archivio
    di pagamenti in attesa e viene indirizzato mediante i meccanismi di
    configurazione del Nodo dei Pagamenti-SPC, che in questo modo sarà in
    grado di individuare il canale corretto di inoltro delle richieste di
    verifica e attivazione di pagamento.
-
    In sintesi questa informazione rappresenta "l'indirizzo"
    dell'archivio dove sono conservate le richieste in attesa che hanno
    dato luogo all'avviso di pagamento.
